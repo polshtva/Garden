@@ -1,0 +1,169 @@
+/* font-family: 'Libre Baskerville', serif;
+font-family: 'Roboto', sans-serif; */
+a{
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+.wrapper {
+    background-color: #FFFFFF;
+}
+.header {
+
+}
+.container {
+    max-width: 1210px;
+    padding: 0px 10px;
+    margin: 0px auto;
+
+}
+.header__contant {
+}
+.log {
+    display: block;
+
+}
+.log__img {
+    margin-top: 14px;
+}
+.log__name{
+    margin-left: 14px;
+    color: #333333;
+    display: inline-block;
+}
+.log__title {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.log__text {
+    font-family: 'Roboto',sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 3px;
+}
+.nav {
+}
+.nuv__list {
+
+}
+.nuv__item {
+    display: inline-block;
+    list-style: none;
+    margin-right: 40px;
+}
+.nuv__link { 
+    font-family: 'Roboto', sans-serif;;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #475F45;
+}
+.hero__img{
+    width: 478px;
+    height: 660px;
+    }
+
+    .hero {
+    }
+    .hero__content {
+        margin-top: 225px;
+    }
+    .hero__title {
+        font-family: 'Libre Baskerville',sans-serif;
+        font-weight: 400;
+        font-size: 57px;
+        line-height: 110%;
+        width: 528px;
+        height: 126px;
+        text-transform: capitalize;
+        color: #343D33;
+        margin-bottom: 16px;
+    }
+    .hero__text {
+        width: 471px;
+        height: 76px;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 150%;
+        color: #414840;
+        margin-bottom: 32px;
+    }
+    .button {
+        margin-bottom: 300px; 
+    }  
+    
+
+    .button__btn_presed, .button__btn, .desc__btn{
+        padding: 20px 40px;
+        border: 2px solid #475F45;
+        margin-right: 16px;
+        gap: 10px;
+        color: #475F45;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        background-color: #FFFFFF;
+        cursor: pointer;
+        letter-spacing: 0.15em;
+    }
+     .button__btn_presed{
+        background: #475F45;
+        color: #FFFFFF;
+    }
+     
+    .desc {
+        background-color: #343D33;
+    }
+    .container {
+    }
+    .desc__contant {
+    }
+    .desc__title {
+        width: 417px;
+        height: 100px;
+        font-family: 'Libre Baskerville',sans-serif;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 110%;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        margin-bottom: 32px;
+    }
+    .desc__text{
+        width: 401px;
+        height: 120px;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: #FFFFFF;
+
+    }
+    .desc__btn {
+        background: #343D33;
+        border: 2px solid #FFFFFF; 
+        color: #FFFFFF;
+        margin-bottom: 94px;
+    }
+    .desc__potflowers {
+        width: 534px;
+        height: 354px;
+        margin-bottom: 80px;
+    }
+    .desc__holflowers {
+        width: 1040px;
+        height: 409px;
+    }
