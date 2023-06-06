@@ -18,6 +18,7 @@ body {
     max-width: 1210px;
     padding: 0px 10px;
     margin: 0px auto;
+    position: relative;
 
 }
 .header__contant {
@@ -53,12 +54,24 @@ body {
 .nav {
 }
 .nuv__list {
-
+ position: absolute;
+    right: 0;
+    top:22px;
 }
 .nuv__item {
     display: inline-block;
     list-style: none;
-    margin-right: 40px;
+    margin-right: 40px;  
+}
+.nuv__item:hover{
+    border: 2px solid #475F45;
+    max-width: 169px;
+    max-height: 46px;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+   
 }
 .nuv__link { 
     font-family: 'Roboto', sans-serif;;
@@ -68,30 +81,27 @@ body {
     text-transform: uppercase;
     color: #475F45;
 }
-.hero__img{
-    width: 478px;
-    height: 660px;
-    }
+
 
     .hero {
     }
     .hero__content {
         margin-top: 225px;
     }
-    .hero__title {
+    .hero__title, .info__title{
         font-family: 'Libre Baskerville',sans-serif;
         font-weight: 400;
         font-size: 57px;
         line-height: 110%;
-        width: 528px;
-        height: 126px;
+        max-width: 528px;
+        max-height: 126px;
         text-transform: capitalize;
         color: #343D33;
         margin-bottom: 16px;
     }
     .hero__text {
-        width: 471px;
-        height: 76px;
+        max-width: 471px;
+        max-height: 76px;
         font-family: 'Roboto',sans-serif;
         font-weight: 300;
         font-size: 25px;
@@ -102,7 +112,11 @@ body {
     .button {
         margin-bottom: 300px; 
     }  
-    
+    .hero__img{
+    width: 478px;
+    height: 660px;
+
+    }
 
     .button__btn_presed, .button__btn, .desc__btn{
         padding: 20px 40px;
@@ -132,8 +146,8 @@ body {
     .desc__contant {
     }
     .desc__title {
-        width: 417px;
-        height: 100px;
+        max-width: 417px;
+        max-height: 100px;
         font-family: 'Libre Baskerville',sans-serif;
         font-weight: 400;
         font-size: 45px;
@@ -166,4 +180,128 @@ body {
     .desc__holflowers {
         width: 1040px;
         height: 409px;
+    }
+
+    .news__title {
+    max-width: 375px;
+    max-height: 50px;
+    font-family: 'Libre Baskerville';
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 110%;
+    text-transform: capitalize;
+    color: #343D33;
+    margin-top: 92px;
+
+    }
+    .news__post {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .news__line {
+    width: 131px;
+    height: 2px;
+    left: 99px;
+    top: 2127px;
+    background: #475F45;
+    opacity: 0.4;
+    }
+    .nuv__link {
+    }
+    .news__arrow {    
+    width: 24px;
+    height: 24px;
+    }
+    
+
+    .info__title{
+        font-size: 45px;
+    }
+    .main {
+    }
+    .main__img-garden {
+        width: 520px;
+        height: 333px;
+        margin-bottom: 20px;
+
+    }
+    .main__title {
+        font-family: 'Libre Baskerville';
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 110%;
+        color: #475F45;
+        margin-bottom: 12px;
+        max-width: 280px;
+        max-height: 25px;
+    }
+    .main__text {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #414840;
+        margin-bottom: 12px;
+        max-width: 471px;
+        max-height: 73px;
+    }
+    .main__data {
+        max-width: 280px;
+        max-height: 24px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #343D33;
+    }
+    .rec {
+    }
+    .rec__lash-gardens {
+    }
+    .rec__img-rec {
+        width: 236px;
+        height: 151px;
+        margin-right: 20px;
+    }
+    .rec__title {
+        max-width: 280px;
+        max-height: 25px;
+        font-family: 'Libre Baskerville';
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 110%;
+        color: #475F45;
+        margin-bottom: 12px;
+    }
+    .rec__text {
+        max-width: 354px;
+        max-height: 48px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #414840;
+        margin-bottom: 12px;
+    }
+    .rec__data {
+        max-width: 280px;
+        max-height: 24px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #343D33;
+        margin-bottom: 35px;
+    }
+
+    .rec__exotic-nature {
+    }
+    .rec__soil {
+    }    
+    .info__line{
+        width: 630px;
+        height: 1px;
+        background: #C4C4C4;
+        order: 1;
+        margin-bottom: 20px;
     }
