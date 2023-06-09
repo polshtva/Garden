@@ -18,13 +18,15 @@ body {
     max-width: 1210px;
     padding: 0px 10px;
     margin: 0px auto;
-    position: relative;
 
 }
 .header__contant {
+    display: flex;
+    justify-content: space-between;
 }
 .log {
-    display: block;
+    display: flex;
+    align-items: center;
 
 }
 .log__img {
@@ -33,7 +35,9 @@ body {
 .log__name{
     margin-left: 14px;
     color: #333333;
-    display: inline-block;
+    margin-top: 14px;
+    padding-top: 5px ;
+    padding-bottom: 6pxc;
 }
 .log__title {
     font-family: 'Roboto',sans-serif;
@@ -52,11 +56,10 @@ body {
     margin-top: 3px;
 }
 .nav {
+    margin-top: 22px;
+    margin-left: 141px;
 }
 .nuv__list {
- position: absolute;
-    right: 0;
-    top:22px;
 }
 .nuv__item {
     display: inline-block;
@@ -82,11 +85,16 @@ body {
     color: #475F45;
 }
 
+.hero__conteiner{
+    display: flex;
+    justify-content: space-between;
+}
 
     .hero {
     }
     .hero__content {
         margin-top: 225px;
+        margin-right: 184px;
     }
     .hero__title, .info__title{
         font-family: 'Libre Baskerville',sans-serif;
@@ -115,7 +123,8 @@ body {
     .hero__img{
     width: 478px;
     height: 660px;
-
+    margin-top: 56px;
+    margin-bottom: 115px;
     }
 
     .button__btn_presed, .button__btn, .desc__btn{
