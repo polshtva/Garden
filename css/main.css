@@ -2,7 +2,7 @@
 font-family: 'Roboto', sans-serif; */
 a{
     text-decoration: none;
-}
+    }
 
 html,
 body {
@@ -26,18 +26,16 @@ body {
 }
 .log {
     display: flex;
-    align-items: center;
+    align-items: center;    
 
 }
 .log__img {
-    margin-top: 14px;
 }
 .log__name{
     margin-left: 14px;
     color: #333333;
     margin-top: 14px;
-    padding-top: 5px ;
-    padding-bottom: 6pxc;
+
 }
 .log__title {
     font-family: 'Roboto',sans-serif;
@@ -46,6 +44,7 @@ body {
     line-height: 27px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+
 }
 .log__text {
     font-family: 'Roboto',sans-serif;
@@ -54,6 +53,8 @@ body {
     font-size: 15px;
     line-height: 18px;
     margin-top: 3px;
+    letter-spacing: 0.01em;
+
 }
 .nav {
     margin-top: 22px;
@@ -74,7 +75,6 @@ body {
     padding-right: 30px;
     padding-bottom: 15px;
     padding-left: 30px;
-   
 }
 .nuv__link { 
     font-family: 'Roboto', sans-serif;;
@@ -88,6 +88,7 @@ body {
 .hero__conteiner{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
     .hero {
@@ -148,11 +149,22 @@ body {
     }
      
     .desc {
-        background-color: #343D33;
+        background-color: #343D33;  
+        position: relative;
+
     }
-    .container {
+    .desc__container {
+        max-width: 1040px;
+        display: flex;
+         flex-wrap: wrap;
+        justify-content: end;
+        flex-direction: row-reverse;
+      
     }
     .desc__contant {
+        position: relative;
+        z-index: 2;
+    
     }
     .desc__title {
         max-width: 417px;
@@ -164,6 +176,8 @@ body {
         text-transform: capitalize;
         color: #FFFFFF;
         margin-bottom: 32px;
+        margin-top: 96px;
+
     }
     .desc__text{
         width: 401px;
@@ -180,15 +194,33 @@ body {
         border: 2px solid #FFFFFF; 
         color: #FFFFFF;
         margin-bottom: 94px;
+        position: relative;
+        z-index: 2;
     }
     .desc__potflowers {
         width: 534px;
         height: 354px;
         margin-bottom: 80px;
+        margin-top: 96px;
+        margin-left: 0px;
+        margin-right: 89px;
+        position: relative;
+        z-index: 2;
     }
     .desc__holflowers {
         width: 1040px;
         height: 409px;
+        position: relativec;
+        z-index: 2;
+        margin-bottom: 96px;
+    }
+
+    .desc__petal{
+        position: absolute;
+        z-index: 1;
+        top:325px;
+        right: 0px;
+    
     }
 
     .news__title {
@@ -227,12 +259,20 @@ body {
         font-size: 45px;
     }
     .main {
+        width: 519px;
+        height: 518px;
+        margin-top: 65px;
+        margin-right: 51px;
     }
     .main__img-garden {
         width: 520px;
         height: 333px;
         margin-bottom: 20px;
 
+    }
+    .main__info{
+        width: 471px;
+        height: 146px;
     }
     .main__title {
         font-family: 'Libre Baskerville';
@@ -255,18 +295,26 @@ body {
         max-height: 73px;
     }
     .main__data {
-        max-width: 280px;
-        max-height: 24px;
         font-family: 'Roboto';
+        /* font-style: italic; */
         font-weight: 400;
         font-size: 16px;
         line-height: 150%;
-        color: #343D33;
+        color: #414840;  
     }
     .rec {
+        max-width: 630px;
+        max-height: 535px;
+        margin-top: 48px;
     }
-    .rec__lash-gardens {
-    }
+
+    .rec__info-garden{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: start;
+}
+
     .rec__img-rec {
         width: 236px;
         height: 151px;
@@ -281,6 +329,7 @@ body {
         line-height: 110%;
         color: #475F45;
         margin-bottom: 12px;
+        margin-top: 15px;
     }
     .rec__text {
         max-width: 354px;
@@ -292,25 +341,190 @@ body {
         color: #414840;
         margin-bottom: 12px;
     }
-    .rec__data {
-        max-width: 280px;
-        max-height: 24px;
-        font-family: 'Roboto';
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 150%;
-        color: #343D33;
-        margin-bottom: 35px;
-    }
+    /* .rec__data {       
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #343D33;
+    } */
 
-    .rec__exotic-nature {
-    }
-    .rec__soil {
-    }    
+    .rec__gardens{
+        display: flex;
+        justify-content: space-between;
+    } 
     .info__line{
         width: 630px;
         height: 1px;
         background: #C4C4C4;
         order: 1;
         margin-bottom: 20px;
+        margin-top: 20px;
     }
+
+   .info__link::before{
+    content: "";
+    width: 131px;
+    height: 2px;
+    background: #475F45;
+    opacity: 0.4;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 5px;
+} 
+.info__post{
+display: flex;
+align-items: center;
+
+}
+.info__arrow{
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+    }
+
+.info__content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.info{
+margin-bottom: 76px;
+}
+
+
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 352px;
+    background: #414840;
+    border-bottom: 80px solid #343D33;
+    margin-top: 97px;
+    bottom: 0;
+    position: relative;
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 52px;
+}
+.footer__desc {
+}
+.footer__img {
+
+}
+.log__title {
+
+}
+.footer__icon-title { 
+    color: #FFFFFF;
+    font-size: 18.8959px;
+    line-height: 22px;
+}
+.log__text {
+}
+.footer__icon-text {
+    color: #FFFFFF;
+    font-size: 12.3234px;
+    line-height: 14px;
+
+}
+.footer__text {
+    margin-top: 20px;
+    max-width: 269px;
+    max-height: 96px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+footer__info{
+}
+
+
+
+
+/* /* .footer_info{
+    width:100%;
+    background-color: aqua;
+} */
+.footer__info-text{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: white;
+}
+.footer_nuv{
+} 
+
+.footer__item{
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 0;
+    margin-left: 0 ;
+}
+.footer__list{
+    padding-left: 0;
+}
+
+.footer__item:last-child{
+    margin-bottom: 0;
+}
+
+.footer__link{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-transform: none;
+    margin: 0;
+}
+.nuv__name{
+    font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding: left 0;
+  margin-bottom: 20px;
+  margin-left: -50px;
+
+}
+.contact__connect{
+    font-family: 'Libre Baskerville';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.contact__link{
+   margin-right: 32px;
+}
+
+.contact__icon{
+    width: 24px;
+    height: 24px;
+
+}
+.contact__link:last-child{
+margin-right: 0px;
+}
+.footer__info{
+position: relative;
+bottom: -90px;
+}
